@@ -43,6 +43,7 @@ jobs:
           git config user.name "GitHub Actions"
           # Update origin with token
           git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          git pull
           # Checkout the branch so we can push back to it
           git checkout tonlib
           git add .
